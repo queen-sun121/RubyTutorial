@@ -17,8 +17,8 @@ def sortFromEnd(array, startIndex, endIndex, key)
 
     puts("endindex : #{endIndex} , startindex : #{startIndex}")
     arr = ""
-    array.each{|x| arr += "#{x} "}
-    puts("The current array is :" + arr)
+    array.each{|x| arr = "#{arr} #{x} "}
+    puts("The current array is :#{arr}")
 
     return endIndex
 end
@@ -40,7 +40,7 @@ def sortFromStart(array, startIndex, endIndex, key)
 
     puts("startindex : #{startIndex} , endindex : #{endIndex} ")
     arr = ""
-    array.each{|x| arr += "#{x} "}
+     array.each{|x| arr = "#{arr} #{x} "}
     puts("The current array is :" + arr)
 
     return startIndex
@@ -81,10 +81,10 @@ def quickSort(array)
     return sortedArray;
 end
 
-#array = [3,2,1,3,100,34,223,223,22,11,12]
+array = [3,2,1,3,100,34,223,223,22,11,12]
 #array = [3,2]
 #array = [10,10,10,10,10,10,10,10,10,10,10]
-array = [10,10,9,10,10,10,10,10,11,10,10]
+#array = [10,10,9,10,10,10,10,10,11,10,10]
 newArray = quickSort(array)
 
 arr = ""
